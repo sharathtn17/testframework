@@ -7,7 +7,7 @@ public class PageAssert {
 	
 	public static void textPresent( WebElement ele, String text ) {
 		
-		ele.getText().equals("");
+		ele.getText().equals(text);
 		
 	}
 	

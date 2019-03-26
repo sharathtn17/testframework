@@ -20,15 +20,11 @@ public class TC_LoginTC extends BaseTest{
 			
 		//logger.info("URL is opened");
 		
-		try {
-			LoginPageAction.signIN_Action("selenium", "selenium").VerifyLogin("");
-			
-			
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	//	logger.info("Entered username");
+		//LoginPageAction.signIN_Action("selenium", "selenium").VerifyLogin("");
+		LoginPage lp=new LoginPage(driver);
+		lp.setUserName("")
+		.setPassword("")
+		.clickSubmit();
 
 }
 

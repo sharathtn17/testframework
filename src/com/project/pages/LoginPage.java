@@ -1,5 +1,6 @@
 package com.project.pages;
 
+import org.omg.Messaging.SyncScopeHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.project.functionalComponet.Actions;
 
-public class LoginPage extends Actions{
+public class LoginPage extends Page{
 	
 	WebDriver driver;
 	
@@ -35,21 +36,22 @@ public class LoginPage extends Actions{
 	WebElement lnkLogout;
 	
 	
-	
-	public void setUserName(String uname)
+	 
+	public LoginPage setUserName(String uname)
 	{
 		Actions.sendKeys(txtUserName, uname);
-		
+		return new LoginPage(driver);
 	}
 	
-	public void setPassword(String pwd)
-	{
+	public LoginPage setPassword(String pwd)
+	{    System.out.println(Page.getTitle());
 		Actions.sendKeys(txtPassword,pwd);
+		return new LoginPage(driver);
 	}
 	
 	
 	public HomePage clickSubmit()
-	{
+	{  
 		btnLogin.click();
 		return new HomePage(driver);
 	}	

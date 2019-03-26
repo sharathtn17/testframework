@@ -19,7 +19,7 @@ public class Waits extends BaseTest{
 	public void waitForAlert(WebDriver driver)
 	{
 		WebDriverWait wait=new WebDriverWait(driver,10); 
-		
+		System.out.println("this is wed deriver wait");
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -28,12 +28,12 @@ public class Waits extends BaseTest{
 
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 		            .withTimeout(Duration.ofSeconds(10))
-		            .pollingEvery(Duration.ofMillis(1000))
-		            .ignoring(WebDriverException.class);
+		            .pollingEvery(Duration.ofMillis(1000));
+		           // .ignoring(WebDriverException.class);
 		WebElement clicableElement = wait.until(new Function<WebDriver, WebElement>()
 		{
 			public WebElement apply(WebDriver driver)
-			{
+			{System.out.println("fulentwait");
 			return ele.findElement(by);
 			}
 		

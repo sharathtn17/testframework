@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.project.functionalComponet.Actions;
 import com.project.functionalComponet.PageAssert;
 
-public class HomePage  extends Actions{
+public class HomePage  extends Page{
 	
 	WebDriver driver;
 	public HomePage(WebDriver rdriver)
@@ -20,11 +20,13 @@ public class HomePage  extends Actions{
 	}
 	@FindBy(how=How.XPATH , using="//b")
 	@CacheLookup
-	WebElement Message;
+	WebElement ExpMessage;
 	
 	public HomePage VerifyLogin(String uname)
-	{
-		PageAssert.textPresent(Message, "**Failed Login**");
+	{   System.out.println(HomePage.getTitle());
+		PageAssert.textPresent(ExpMessage, "**Failed Login**");
 		return new HomePage(driver);
 	}
+	
+	
 }
