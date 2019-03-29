@@ -24,14 +24,14 @@ public class Actions  extends BaseTest {
 	
 	public static void sendKeys(WebElement e,String S)
 	{
-		Waits.IFluentWait(driver,e,By.xpath("")).sendKeys(S);;
-	
-	}
+		//Waits.IFluentWait(driver,e,By.xpath("")).sendKeys(S);;
+	    Waits.waitForElement(e).sendKeys(S);
+	} 
 	
 	public static void click(WebElement e)
 	{
-		Waits.IFluentWait(driver,e,By.xpath("")).click();
-	
+		//Waits.IFluentWait(driver,e,By.xpath("")).click();
+	    Waits.waitForElement(e).click();;
 	}
 	
 	public static String getTitle()
