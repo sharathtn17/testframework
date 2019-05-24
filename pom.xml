@@ -22,7 +22,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>6.5.1</version>
-    <scope>test</scope>
+   
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -36,6 +36,8 @@
   <version>3.0.0-M1</version>
   <type>maven-plugin</type>
 </dependency>
+
+
     </dependencies>
   
 </project>

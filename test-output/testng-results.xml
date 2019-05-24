@@ -2,14 +2,14 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10472" started-at="2019-03-29T12:47:21Z" finished-at="2019-03-29T12:47:31Z">
+  <suite name="Default suite" duration-ms="16370" started-at="2019-05-02T16:40:39Z" finished-at="2019-05-02T16:40:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10472" started-at="2019-03-29T12:47:21Z" finished-at="2019-03-29T12:47:31Z">
+    <test name="Default test" duration-ms="16370" started-at="2019-05-02T16:40:39Z" finished-at="2019-05-02T16:40:55Z">
       <class name="com.project.tests.TC_LoginTC">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.project.tests.TC_LoginTC@153acfe]" name="setup" is-config="true" duration-ms="9979" started-at="2019-03-29T12:47:21Z" finished-at="2019-03-29T12:47:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.project.tests.TC_LoginTC@e2cbe0]" name="setup" is-config="true" duration-ms="7410" started-at="2019-05-02T16:40:39Z" finished-at="2019-05-02T16:40:46Z">
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.project.tests.TC_LoginTC@153acfe]" name="loginTest" duration-ms="464" started-at="2019-03-29T12:47:31Z" finished-at="2019-03-29T12:47:31Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.project.tests.TC_LoginTC@e2cbe0]" name="loginTest" duration-ms="8944" started-at="2019-05-02T16:40:46Z" finished-at="2019-05-02T16:40:55Z">
         </test-method> <!-- loginTest -->
       </class> <!-- com.project.tests.TC_LoginTC -->
     </test> <!-- Default test -->
